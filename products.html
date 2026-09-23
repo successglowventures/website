@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products - Success Glow Ventures</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; color: #222; background: #fafafa; }
+a { text-decoration: none; color: inherit; }
+header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 18px 24px; background: #fff; border-bottom: 1px solid #eee;
+  position: sticky; top: 0; z-index: 10;
+}
+.logo { font-family: Georgia, serif; font-size: 20px; font-weight: bold; color: #111; }
+.logo span { color: #C9A227; }
+nav { display: flex; gap: 22px; }
+nav a { font-size: 14px; color: #333; }
+.menu-toggle { display: none; flex-direction: column; gap: 4px; cursor: pointer; background:none; border:none; }
+.menu-toggle div { width: 22px; height: 2px; background: #111; }
+@media (max-width: 640px) {
+  nav { display: none; flex-direction: column; position: absolute; top: 62px; left: 0; right: 0; background: #fff; padding: 16px 24px; border-bottom: 1px solid #eee; }
+  nav.open { display: flex; }
+  .menu-toggle { display: flex; }
+}
+.page-hero { background: #111; color: #fff; text-align: center; padding: 50px 24px; }
+.page-hero p.eyebrow { color: #C9A227; font-size: 12px; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 12px; }
+.page-hero h1 { font-family: Georgia, serif; font-size: 28px; }
+.section { padding: 50px 24px; max-width: 1000px; margin: 0 auto; }
+.cat-block { margin-bottom: 46px; }
+.cat-header { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
+.cat-header .icon { font-size: 26px; }
+.cat-header h2 { font-family: Georgia, serif; font-size: 20px; color: #111; }
+.item-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+@media (max-width: 640px) { .item-grid { grid-template-columns: repeat(2, 1fr); } }
+.item-card {
+  border: 1px solid #eee; border-radius: 10px; padding: 18px 12px; text-align: center;
+  background: #fff; font-size: 13px; color: #333; transition: box-shadow 0.2s;
+}
+.item-card:hover { box-shadow: 0 8px 20px rgba(0,0,0,0.06); }
+.cta-band { background: #faf8f2; text-align: center; padding: 40px 24px; margin-top: 20px; }
+.cta-band p { font-size: 15px; color: #333; margin-bottom: 18px; }
+.btn-gold {
+  display: inline-block; background: #C9A227; color: #111; font-weight: bold;
+  padding: 12px 28px; border-radius: 4px; font-size: 14px;
+}
+footer { background: #111; color: #ccc; padding: 40px 24px; text-align: center; }
+footer .logo { color: #fff; font-size: 18px; margin-bottom: 16px; display: block; }
+.social-row { display: flex; justify-content: center; gap: 14px; margin: 18px 0; }
+.social-icon { width: 38px; height: 38px; border-radius: 50%; background: #C9A227; display: flex; align-items: center; justify-content: center; font-size: 16px; }
+footer .copy { font-size: 12px; color: #888; margin-top: 20px; }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo">Success Glow <span>Ventures</span></a>
+  <button class="menu-toggle" onclick="document.getElementById('nav').classList.toggle('open')">
+    <div></div><div></div><div></div>
+  </button>
+  <nav id="nav">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <p class="eyebrow">Our Range</p>
+  <h1>Products</h1>
+</div>
+
+<div class="section">
+
+  <div class="cat-block">
+    <div class="cat-header"><span class="icon">🌸</span><h2>Perfumes</h2></div>
+    <div class="item-grid">
+      <div class="item-card">Spray Perfumes</div>
+      <div class="item-card">Oil Perfumes</div>
+    </div>
+  </div>
+
+  <div class="cat-block">
+    <div class="cat-header"><span class="icon">🧴</span><h2>Soap &amp; Personal Care</h2></div>
+    <div class="item-grid">
+      <div class="item-card">Liquid Soap</div>
+      <div class="item-card">Shower Gel</div>
+      <div class="item-card">Petroleum Jelly</div>
+      <div class="item-card">Antiseptic</div>
+    </div>
+  </div>
+
+  <div class="cat-block">
+    <div class="cat-header"><span class="icon">🧼</span><h2>Home Care</h2></div>
+    <div class="item-grid">
+      <div class="item-card">Powder Detergent</div>
+      <div class="item-card">Washing Soap</div>
+      <div class="item-card">Bleach</div>
+      <div class="item-card">Disinfectant / Germicide</div>
+    </div>
+  </div>
+
+  <div class="cat-block">
+    <div class="cat-header"><span class="icon">🏡</span><h2>Diffusers &amp; Fresheners</h2></div>
+    <div class="item-grid">
+      <div class="item-card">Reed Diffusers</div>
+      <div class="item-card">Car Diffusers</div>
+      <div class="item-card">Air Fresheners</div>
+    </div>
+  </div>
+
+  <div class="cat-block">
+    <div class="cat-header"><span class="icon">👕</span><h2>Custom Sewn Wear</h2></div>
+    <div class="item-grid">
+      <div class="item-card">Joggers</div>
+      <div class="item-card">Hoodies</div>
+      <div class="item-card">Cargo Pants</div>
+      <div class="item-card">Vintage Shirts</div>
+    </div>
+  </div>
+
+  <div class="cta-band">
+    <p>Interested in any of these? Reach out and let's talk.</p>
+    <a href="contact.html" class="btn-gold">Contact Us</a>
+  </div>
+
+</div>
+
+<footer>
+  <span class="logo">Success Glow Ventures</span>
+  <p>Quality products at affordable prices.</p>
+  <div class="social-row">
+    <a href="https://www.facebook.com/profile.php?id=61556378224722" class="social-icon" target="_blank">📘</a>
+    <a href="https://wa.me/2347067019699" class="social-icon" target="_blank">💬</a>
+  </div>
+  <p class="copy">&copy; 2026 Success Glow Ventures. All rights reserved.</p>
+</footer>
+
+</body>
+  </html>
